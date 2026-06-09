@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
@@ -17,112 +16,272 @@
   <title>Projects | Soni Family Foundation</title>
   <meta name="description" content="Explore SFF’s pillars—Learning, Wellness, and R&D—supporting Dallas students through microgrants, mentorship, and evidence-based pilots. 501(c)(3) · EIN: 33-3328044." />
   <link rel="canonical" href="https://www.sonifoundation.org/projects.html" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/sff-logo.png" />
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.sonifoundation.org/projects.html" />
-  <meta property="og:site_name" content="Soni Family Foundation" />
-  <meta property="og:title" content="Projects | Soni Family Foundation" />
-  <meta property="og:description" content="See our pillars and current focus areas across Dallas schools and nonprofits. EIN: 33-3328044." />
-  <meta property="og:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
-  <meta property="og:image:alt" content="Soni Family Foundation Logo" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Projects | Soni Family Foundation" />
-  <meta name="twitter:description" content="See our pillars and current focus areas across Dallas schools and nonprofits. EIN: 33-3328044." />
-  <meta name="twitter:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "NonprofitOrganization",
-    "name": "Soni Family Foundation",
-    "url": "https://www.sonifoundation.org/",
-    "logo": "https://www.sonifoundation.org/assets/sff-logo.png",
-    "taxID": "33-3328044",
-    "nonprofitStatus": "https://schema.org/Nonprofit501c3"
-  }
-  </script>
-
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; line-height: 1.6; }
-    a:focus-visible, button:focus-visible { outline: 2px solid #8c6830; outline-offset: 2px; }
-    img { display: block; max-width: 100%; height: auto; }
-
-    /* Header / Nav (matches index/about) */
-    header { background: #faf1dd; border-bottom: 1px solid #ecd9b0; }
-    .main-nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 2rem; }
-    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
-    .nav-logo img { height: 60px; width: 60px; border-radius: 7px; box-shadow: 0 2px 8px rgba(140,104,48,0.10); }
-    .nav-brand { font-size: 1.25rem; font-weight: bold; color: #603e15; letter-spacing: 1px; }
-    .nav-right { list-style: none; display: flex; gap: 2.2rem; }
-    .nav-right li a { text-decoration: none; color: #2c1a1d; font-weight: bold; font-size: 1.15rem; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
-    .nav-right li a:hover, .nav-right li a[aria-current="page"] { color: #b89b62; border-bottom: 2px solid #b89b62; }
-
-    /* Page heading + hero image */
-    .projects-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto 2rem;
-}
-
-.projects-hero img {
-    width: 100%;
-    max-width: 1000px; /* Match impact strip width */
-    border-radius: 20px;
-    box-shadow: 0 6px 28px rgba(140,104,48,0.10);
-    margin: 0 auto;
-}
-    /* Impact strip */
-    .impact-strip { max-width: 1000px; margin: 0 auto 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; padding: 0 1rem; }
-    .impact-card { background: #fff9ef; border: 1px solid #ecd9b0; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: 0 2px 10px rgba(180,155,98,0.08); }
-    .impact-card .num { font-size: 1.6rem; font-weight: 700; color: #895721; }
-    .impact-card .label { font-size: 0.98rem; color: #604d31; }
-
-    /* Pillars / projects */
-    .projects-section { max-width: 1000px; margin: 2rem auto 3rem; display: flex; flex-direction: column; gap: 2rem; padding: 0 1rem; }
-    .project-block { display: grid; grid-template-columns: 160px 1fr; align-items: center; background: #fff9ef; border-radius: 18px; box-shadow: 0 2px 14px rgba(180,155,98,0.10); padding: 1.6rem; gap: 1.2rem; }
-    .project-block img { width: 160px; height: 120px; object-fit: cover; border-radius: 12px; box-shadow: 0 2px 10px rgba(140,104,48,0.08); }
-    .project-content h2 { font-size: 1.45rem; color: #8c6830; margin-bottom: 0.45rem; display: flex; align-items: baseline; gap: .6rem; }
-    .pill-num { font-weight: 800; color: #b89b62; font-size: 1.1rem; letter-spacing: .5px; }
-    .project-content p { font-size: 1.07rem; color: #433422; }
-
-    /* CTA row */
-    .cta-row { max-width: 1000px; margin: 0 auto 3rem; padding: 0 1rem; display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
-    .btn { text-decoration: none; padding: 0.9rem 1.3rem; background: #8c6830; color: #fff; border-radius: 6px; font-weight: 700; font-size: 1rem; transition: background 0.23s, box-shadow 0.23s; box-shadow: 0 2px 10px rgba(180,155,98,0.08); }
-    .btn:hover { background: #b89b62; box-shadow: 0 4px 16px rgba(180,155,98,0.15); }
-
-    /* Footer */
-    footer { border-top: 1px solid #ecd9b0; background: #faf1dd; padding: 1rem 2rem; text-align: center; font-size: 0.95rem; color: #433422; }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .main-nav { flex-direction: column; gap: 0.6rem; }
-      .impact-strip { grid-template-columns: 1fr 1fr; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: Georgia, serif;
+      background: #faf6ef;
+      color: #2c1a1d;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    header {
+      background: #faf1dd;
+      border-bottom: 1px solid #ecd9b0;
+    }
+
+    .main-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 7px;
+    }
+
+    .nav-brand {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #603e15;
+      letter-spacing: 1px;
+    }
+
+    .nav-right {
+      list-style: none;
+      display: flex;
+      gap: 2.2rem;
+    }
+
+    .nav-right a {
+      text-decoration: none;
+      color: #2c1a1d;
+      font-weight: bold;
+      font-size: 1.15rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-right a:hover,
+    .nav-right a[aria-current="page"] {
+      color: #b89b62;
+      border-bottom-color: #b89b62;
+    }
+
+    .page-hero {
+      max-width: 1000px;
+      margin: 2.5rem auto 1rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: 2.1rem;
+      color: #8c6830;
+      margin-bottom: 1.2rem;
+    }
+
+    .projects-hero {
+      max-width: 1000px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+
+    .projects-hero img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 6px 28px rgba(140, 104, 48, 0.10);
+    }
+
+    .impact-strip {
+      max-width: 1000px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.9rem;
+    }
+
+    .impact-card {
+      background: #fff9ef;
+      border: 1px solid #ecd9b0;
+      border-radius: 14px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(180, 155, 98, 0.08);
+    }
+
+    .impact-card .num {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #895721;
+    }
+
+    .impact-card .label {
+      font-size: 0.98rem;
+      color: #604d31;
+    }
+
+    .projects-section {
+      max-width: 1000px;
+      margin: 2rem auto 3rem;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .project-block {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      align-items: center;
+      gap: 1.2rem;
+      background: #fff9ef;
+      border-radius: 18px;
+      padding: 1.6rem;
+      box-shadow: 0 2px 14px rgba(180, 155, 98, 0.10);
+    }
+
+    .project-block img {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .project-content h2 {
+      font-size: 1.45rem;
+      color: #8c6830;
+      margin-bottom: 0.45rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    .pill-num {
+      font-weight: 800;
+      color: #b89b62;
+      font-size: 1.1rem;
+    }
+
+    .project-content p {
+      font-size: 1.07rem;
+      color: #433422;
+    }
+
+    .cta-row {
+      max-width: 1000px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 0.9rem 1.3rem;
+      background: #8c6830;
+      color: white;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .btn:hover {
+      background: #b89b62;
+    }
+
+    footer {
+      border-top: 1px solid #ecd9b0;
+      background: #faf1dd;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #433422;
+    }
+
+    @media (max-width: 900px) {
+      .main-nav {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .impact-strip {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
     @media (max-width: 700px) {
-      .projects-hero img { max-width: 98vw; }
-      .impact-strip { grid-template-columns: 1fr; }
-      .project-block { grid-template-columns: 1fr; text-align: center; }
-      .project-block img { margin: 0 auto; }
+      .nav-right {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .page-hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .projects-hero img {
+        height: 220px;
+      }
+
+      .impact-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .project-block {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .project-block img {
+        margin: 0 auto;
+      }
+
+      .project-content h2 {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
   </style>
 </head>
-<body>
-  <a href="#main" class="sr-only" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 
+<body>
   <header>
     <nav class="main-nav" aria-label="Primary">
-      <a href="index.html" class="nav-logo" aria-label="Soni Family Foundation home">
-        <img src="assets/sff-logo.png" alt="Soni Family Foundation Logo" width="60" height="60" decoding="async" fetchpriority="high" />
+      <a href="index.html" class="nav-logo">
+        <img src="assets/sff-logo.png" alt="Soni Family Foundation Logo">
         <span class="nav-brand">Soni Family Foundation</span>
       </a>
+
       <ul class="nav-right">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -132,63 +291,59 @@
     </nav>
   </header>
 
-  <main id="main">
-    <div class="page-hero">
+  <main>
+    <section class="page-hero">
       <h1>Our Projects & Pillars</h1>
-    </div>
-
-    <!-- HERO IMAGE -->
-    <section class="projects-hero" aria-label="Projects banner">
-      <img src="assets/projects-hero.jpg" alt="Students collaborating during an after-school session" loading="lazy" decoding="async" width="900" height="540" />
     </section>
 
-    <!-- IMPACT STRIP (UPDATED) -->
-    <section class="impact-strip" aria-label="Impact metrics">
+    <section class="projects-hero">
+      <img src="assets/projects-hero.jpg" alt="Students collaborating during an after-school session">
+    </section>
+
+    <section class="impact-strip">
       <div class="impact-card">
         <div class="num">1000+</div>
         <div class="label">Lives Impacted</div>
       </div>
+
       <div class="impact-card">
         <div class="num">9</div>
         <div class="label">Microgrants Awarded</div>
       </div>
+
       <div class="impact-card">
         <div class="num">3</div>
         <div class="label">School & Nonprofit Partners</div>
       </div>
     </section>
 
-    <!-- PILLARS -->
-   <section class="projects-section" aria-label="Project pillars">
+    <section class="projects-section">
+      <article class="project-block">
+        <img src="assets/pillar1.jpg" alt="Tutor and student in a small-group learning session">
+        <div class="project-content">
+          <h2><span class="pill-num">01</span> Challenging the Norms of Learning</h2>
+          <p>Education should never be limited by circumstance. We invest in mentorship, accessible learning spaces, and evidence-based teaching approaches that help students build confidence, curiosity, and lasting skills.</p>
+        </div>
+      </article>
 
-  <article class="project-block">
-    <img src="assets/pillar1.jpg" alt="Tutor and student in a small-group learning session" loading="lazy" decoding="async" width="160" height="120">
-    <div class="project-content">
-      <h2><span class="pill-num">01</span> Challenging the Norms of Learning</h2>
-      <p>Education should never be limited by circumstance. We invest in mentorship, accessible learning spaces, and evidence-based teaching approaches that help students build confidence, curiosity, and lasting skills.</p>
-    </div>
-  </article>
+      <article class="project-block">
+        <img src="assets/pillar2.jpg" alt="Students participating in a wellness and mindfulness activity">
+        <div class="project-content">
+          <h2><span class="pill-num">02</span> Redefining What It Means to Be Well</h2>
+          <p>Wellness begins with safety, belonging, and consistent support. We back initiatives that strengthen emotional resilience, mental clarity, and a sense of care so young people can grow and learn with stability.</p>
+        </div>
+      </article>
 
-  <article class="project-block">
-    <img src="assets/pillar2.jpg" alt="Students participating in a wellness and mindfulness activity" loading="lazy" decoding="async" width="160" height="120">
-    <div class="project-content">
-      <h2><span class="pill-num">02</span> Redefining What It Means to Be Well</h2>
-      <p>Wellness begins with safety, belonging, and consistent support. We back initiatives that strengthen emotional resilience, mental clarity, and a sense of care so young people can grow and learn with stability.</p>
-    </div>
-  </article>
+      <article class="project-block">
+        <img src="assets/pillar3.jpg" alt="Whiteboard with sticky notes from a community co-design session">
+        <div class="project-content">
+          <h2><span class="pill-num">03</span> Rethinking How Progress Is Made</h2>
+          <p>Our research and development is community-driven. We listen, prototype, measure, and refine new tutoring formats and classroom supports, scaling the solutions that demonstrate real impact.</p>
+        </div>
+      </article>
+    </section>
 
-  <article class="project-block">
-    <img src="assets/pillar3.jpg" alt="Whiteboard with sticky notes from a community co-design session" loading="lazy" decoding="async" width="160" height="120">
-    <div class="project-content">
-      <h2><span class="pill-num">03</span> Rethinking How Progress Is Made</h2>
-      <p>Our research and development is community-driven. We listen, prototype, measure, and refine new tutoring formats and classroom supports, scaling the solutions that demonstrate real impact.</p>
-    </div>
-  </article>
-
-</section>
-
-    <!-- Optional CTAs -->
-    <div class="cta-row" aria-label="Calls to action">
+    <div class="cta-row">
       <a class="btn" href="donate.html">Donate</a>
       <a class="btn" href="about.html">About SFF</a>
     </div>
