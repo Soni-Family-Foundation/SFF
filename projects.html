@@ -64,11 +64,21 @@
     .nav-right li a:hover, .nav-right li a[aria-current="page"] { color: #b89b62; border-bottom: 2px solid #b89b62; }
 
     /* Page heading + hero image */
-    .page-hero { text-align: center; margin: 2.5rem auto 1rem; padding: 0 1rem; max-width: 1100px; }
-    .page-hero h1 { font-size: 2.1rem; color: #8c6830; margin-bottom: 1.2rem; }
-    .projects-hero { width: 100%; max-width: 1100px; margin: 0 auto 2rem; text-align: center; }
-    .projects-hero img { width: 100%; max-width: 900px; border-radius: 20px; box-shadow: 0 6px 28px rgba(140,104,48,0.10); }
+    .projects-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 2rem;
+}
 
+.projects-hero img {
+    width: 100%;
+    max-width: 1000px; /* Match impact strip width */
+    border-radius: 20px;
+    box-shadow: 0 6px 28px rgba(140,104,48,0.10);
+    margin: 0 auto;
+}
     /* Impact strip */
     .impact-strip { max-width: 1000px; margin: 0 auto 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; padding: 0 1rem; }
     .impact-card { background: #fff9ef; border: 1px solid #ecd9b0; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: 0 2px 10px rgba(180,155,98,0.08); }
